@@ -1,0 +1,13 @@
+.fotorama {
+  $margin: 32px;
+  &__stage {
+    margin-bottom: $margin;
+    overflow: visible;
+  }
+  &__stage__frame {
+    overflow: visible;
+  }
+  &__caption {
+    bottom: $margin * -1;
+  }
+}

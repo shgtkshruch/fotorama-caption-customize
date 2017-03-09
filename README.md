@@ -1,0 +1,1 @@
+# fotorama-caption-customize

@@ -1,0 +1,21 @@
+extends layout
+
+block title
+  title fotorama-caption-customize
+
+block body
+  .l-container
+    .fotorama(data-nav="thumbs")
+      - var imgs = [];
+      - imgs[0] = {id: 'OrgLz7cjFIc'};
+      - imgs[1] = {id: '8V8qCIIo554'};
+      - imgs[2] = {id: 'xagqOinFSu4'};
+      - imgs[3] = {id: 'GdTLaWamFHw'};
+      - imgs[4] = {id: 'T7Lnl3PFISM'};
+      - imgs[5] = {id: 'vXpcpTl2Tt4'};
+      - imgs[6] = {id: '89PFnHKg8HE'};
+      - imgs[7] = {id: '91zFxX-LBuE'};
+      - imgs[8] = {id: 'jlV2k_Fx0fc'};
+      - imgs[9] = {id: 'vZ7ezwU9Bc0'};
+      each img, i in imgs
+        img(src=`https://source.unsplash.com/${img.id}/600x340` data-caption="this is image caption")
